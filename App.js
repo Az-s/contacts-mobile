@@ -7,7 +7,7 @@ import reducer from './store/reducer/reducer';
 import thunk from 'redux-thunk';
 import Index from './components/Main/Index';
 
-export default function App() {
+export default function App () {
 
   const store = createStore(reducer, applyMiddleware(thunk));
 
