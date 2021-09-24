@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
     },
     title: {
         fontWeight: "bold",
-        fontSize: 20,
+        fontSize: 18,
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',

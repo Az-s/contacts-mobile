@@ -6,54 +6,56 @@ import { fetchContacts } from '../../store/actions/actions';
 import Contacts from '../Contacts/Contacts';
 
 const Index = () => {
-    const dispatch = useDispatch();
+  const dispatch = useDispatch();
 
-    const contacts = useSelector(state => state.contact);
+  const contacts = useSelector(state => state.contact);
 
-    useEffect(() => {
-        dispatch(fetchContacts());
-    }, [dispatch]);
+  useEffect(() => {
+    dispatch(fetchContacts());
+  }, [dispatch]);
 
-    return (
-        <View style={styles.container}>
-        <StatusBar style="auto" />
-        <View style={styles.title}>
-          <Text style={styles.text}>Contacts</Text>
-        </View>
-        {contacts.map(c => (
-          <Contacts
-            key={c.id}
-            id={c.id}
-            name={c.name}
-            email={c.email}
-            phone={c.phone}
-            photo={c.photo}
-          />
-        ))}
+  return (
+    <View style={styles.container}>
+      <StatusBar style="auto" />
+      <View style={styles.title}>
+        <Text style={styles.text}>
+          Contacts
+        </Text>
       </View>
-    )
+      {contacts.map(c => (
+        <Contacts
+          key={c.id}
+          id={c.id}
+          name={c.name}
+          email={c.email}
+          phone={c.phone}
+          photo={c.photo}
+        />
+      ))}
+    </View>
+  )
 };
 
 const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      backgroundColor: '#fff',
-      alignItems: 'center',
-      justifyContent: 'center',
-    },
-    title: {
-      textAlign: 'center',
-      marginVertical: 20,
-      backgroundColor: '#497ebf',
-      minWidth: '100%',
-      padding: 10,
-    },
-    text: {
-      color: '#fff',
-      textAlign: 'center',
-      fontSize: 18,
-      top: 0,
-    }
-  });
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  title: {
+    textAlign: 'center',
+    marginVertical: 20,
+    backgroundColor: '#497ebf',
+    minWidth: '100%',
+    padding: 10,
+  },
+  text: {
+    color: '#fff',
+    textAlign: 'center',
+    fontSize: 18,
+    top: 0,
+  }
+});
 
 export default Index;
