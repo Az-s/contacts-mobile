@@ -48,7 +48,7 @@ const ModalInfo = ({email, name, id, phone, photo}) => {
             </Pressable>
         </View>
     )
-}
+};
 
 const styles = StyleSheet.create({
     centeredView: {

@@ -25,4 +25,4 @@ export const fetchContacts = () => {
         dispatch(fetchContactsFailure(e));
       }
     };
-  }
+  };

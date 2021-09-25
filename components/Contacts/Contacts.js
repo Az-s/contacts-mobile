@@ -32,7 +32,7 @@ const Contacts = ({ email, name, id, phone, photo }) => {
             />
         </>
     )
-}
+};
 
 const styles = StyleSheet.create({
     cards: {
