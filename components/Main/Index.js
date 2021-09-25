@@ -23,7 +23,8 @@ const Index = () => {
         {contacts.map(c => (
           <Contacts
             key={c.id}
-            name={c.dish}
+            id={c.id}
+            name={c.name}
             email={c.email}
             phone={c.phone}
             photo={c.photo}

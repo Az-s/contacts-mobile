@@ -1,7 +1,4 @@
 import {
-    CONTACTS_REQUEST,
-    CONTACTS_SUCCESS,
-    CONTACTS_FAILURE,
     FETCH_CONTACTS_REQUEST,
     FETCH_CONTACTS_SUCCESS,
     FETCH_CONTACTS_FAILURE,
@@ -17,12 +14,6 @@ const initialState = {
 
 const reducer = (state = initialState, action) => {
     switch (action.type) {
-      case CONTACTS_REQUEST:
-        return {...state, loading: true};
-      case CONTACTS_SUCCESS:
-        return {...state, loading: false};
-      case CONTACTS_FAILURE:
-        return {...state, loading: false, error: action.payload};
       case FETCH_CONTACTS_REQUEST:
         return {...state, fetchLoading: true, fetchError: null};
       case FETCH_CONTACTS_SUCCESS:
