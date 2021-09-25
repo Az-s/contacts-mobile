@@ -44,7 +44,7 @@ const ModalInfo = ({email, name, id, phone, photo}) => {
                 style={[styles.button, styles.buttonOpen]}
                 onPress={() => setModalVisible(true)}
             >
-                <Text style={styles.textStyle}>Checkout</Text>
+                <Text style={styles.textStyle}>More info</Text>
             </Pressable>
         </View>
     )

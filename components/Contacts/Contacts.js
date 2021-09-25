@@ -17,8 +17,6 @@ const Contacts = ({ email, name, id, phone, photo }) => {
                         />
                         <View style={styles.title}>
                             <Text>{name}</Text>
-                            {/* <Text>{phone}</Text>
-                        <Text>{email}</Text> */}
                         </View>
                     </View>
                 </Pressable>

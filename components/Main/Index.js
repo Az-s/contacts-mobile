@@ -6,6 +6,7 @@ import { fetchContacts } from '../../store/actions/actions';
 import Contacts from '../Contacts/Contacts';
 
 const Index = () => {
+  
   const dispatch = useDispatch();
 
   const contacts = useSelector(state => state.contact);

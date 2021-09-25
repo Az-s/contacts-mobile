@@ -8,7 +8,6 @@ export const fetchContactsRequest = () => ({ type: FETCH_CONTACTS_REQUEST });
 export const fetchContactsSuccess = contact => ({ type: FETCH_CONTACTS_SUCCESS, payload: contact });
 export const fetchContactsFailure = error => ({ type: FETCH_CONTACTS_FAILURE, payload: error });
 
-
 export const fetchContacts = () => {
   return async dispatch => {
     try {

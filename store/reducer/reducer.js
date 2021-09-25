@@ -12,7 +12,7 @@ const initialState = {
   fetchError: null,
 };
 
-const reducer = (state = initialState, action) => {
+const reducer = ( state = initialState, action) => {
   switch (action.type) {
     case FETCH_CONTACTS_REQUEST:
       return { ...state, fetchLoading: true, fetchError: null };
